@@ -1,10 +1,22 @@
-import './App.css'
+import { BrowserRouter } from "react-router-dom";
+import { ThemeProvider } from "styled-components";
+import { Home } from "./pages/Home/home";
+import { DefaultTheme } from "./styles/theme/default";
+
 
 function App() {
 
   return (
-    <div className="App">   
-    </div>
+    <ThemeProvider theme={DefaultTheme}>
+      {/* <BrowserRouter>
+
+      
+      </BrowserRouter> */}
+
+      <Home/>
+      
+
+    </ThemeProvider>
   )
 }
 
