@@ -1,5 +1,6 @@
 import React from 'react'
 import { Header } from '../../components/Header/Header'
+import LayoutCard from '../../components/LayoutCards/LayoutCard'
 import { BannerSection, HighlightedSection, HomeMain, MainTopicDiv, TextButton, TextDiv, TextImg, TextParagraph, TextTitle } from './style'
 
 export const Home = () => {
@@ -29,6 +30,8 @@ export const Home = () => {
             <TextImg src="https://c4.wallpaperflare.com/wallpaper/428/376/859/brazil-christ-cristo-hills-wallpaper-preview.jpg" alt="Imagem do Cristo Redentor no fim da tarde" />
           </MainTopicDiv>
         </HighlightedSection>
+
+        <LayoutCard/>
     </HomeMain>
   )
 }

@@ -8,6 +8,7 @@ export const HeaderContainer = styled.header`
     padding: 15px 30px;
     display: flex;
     justify-content: space-between;
+    z-index: 500;
     `
 
 export const LogoImg = styled.img`
