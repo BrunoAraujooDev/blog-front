@@ -22,14 +22,14 @@ export const Home = () => {
               Vivamus et eros elit. Donec sit amet lobortis massa. 
               Sed et ullamcorper massa. Nam accumsan, libero non facilisis posuere, mauris sapien bibendum diam, vitae bibendum velit risus vitae nisl. 
             </TextParagraph>
-            <TextButton>Ver mais</TextButton>
+            <TextButton>Ver todos</TextButton>
 
           </TextDiv>
           <TextImg src="https://c4.wallpaperflare.com/wallpaper/428/376/859/brazil-christ-cristo-hills-wallpaper-preview.jpg" alt="Imagem do Cristo Redentor no fim da tarde" />
         </MainTopicDiv>
       </HighlightedSection>
 
-      {/* <LayoutCard/> */}
+      <LayoutCard/>
     </HomeMain>
   )
 }

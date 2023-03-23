@@ -44,7 +44,8 @@ export const HighlightedSection = styled.section`
     `
 
 export const MainTopicDiv = styled.div`
-    background-color: ${props => props.theme['primary-color-theme']};
+    background-color: ${props => props.theme['secondary-color-theme']};
+    box-shadow: 0px 5px 40px -1px rgba(0,0,0,0.40);
     display: flex;
     width: 55rem;
     height: 25rem;
@@ -82,7 +83,6 @@ export const TextDiv = styled.div`
     @media (max-width: 768px) {
       width: 100%;
       height: 40%;
-      background-color: ${props => props.theme['secondary-color-theme']};
   }
 
   @media (max-width: 425px) {

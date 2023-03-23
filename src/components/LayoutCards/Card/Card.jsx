@@ -1,13 +1,17 @@
 import React from 'react'
+import { TextButton, TextParagraph } from '../../../pages/Home/style'
+import { CardContainer, CardContent, CardImg, CardTitle } from './style'
 
-const Card = ({post}) => {
+const Card = ({post, index}) => {
   return (
-    <div>
-      <img src="" alt="" />
-      <span>{post.title}</span>
-      <p>{post.body}</p>
-      <button>Ver mais</button>
-    </div>
+    <CardContainer>
+      <CardImg src={`https://source.unsplash.com/random/300x130?sign=${index + 50}`} alt="Random picture" />
+      <CardContent>
+        <CardTitle>{post.title}</CardTitle>
+        <TextParagraph>{post.body.substring(0, 130)}...</TextParagraph>
+        <TextButton>Ver mais</TextButton>
+      </CardContent>
+    </CardContainer>
   )
 }
 

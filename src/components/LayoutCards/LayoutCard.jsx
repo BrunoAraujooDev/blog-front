@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { getPosts } from '../../services/httpRequest';
 import Card from './Card/Card';
-import { CardContainer, LayoutCardDiv, TitleSection } from './style';
+import { LayoutCardContainer, LayoutCardDiv, TitleSection } from './style';
 
 const LayoutCard = () => {
 
@@ -25,19 +25,23 @@ const LayoutCard = () => {
     }, [])
 
   return (
-    <CardContainer>
+    <LayoutCardContainer>
         <TitleSection>Explorar</TitleSection>
         <LayoutCardDiv>
 
                 {
-                    posts.map((post) => {
-                        return (
-                            <Card post={post} key={post.id}/>
-                        )
-                    })
-                }
+                    posts.map((post, index) => {
+                        
+                        if(index <= 3){
+                            return (
+                                <Card post={post} key={post.id} index={index}/>
+                                )
+                            }
+                        })
+                    }
         </LayoutCardDiv>
-    </CardContainer>
+        <TitleSection>Ver todos</TitleSection>
+    </LayoutCardContainer>
   )
 }
 
