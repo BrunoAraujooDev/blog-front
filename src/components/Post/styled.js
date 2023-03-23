@@ -7,7 +7,7 @@ export const PostContainer = styled.div`
     background-color: ${props => props.theme['secondary-color-theme']};
     box-shadow: 0px 5px 40px -1px rgba(0,0,0,0.40);
     width: 55rem;
-    height: 20rem;
+    height: 23rem;
     border-radius: 15px;
     overflow: hidden;
 
@@ -35,7 +35,7 @@ export const PostContainer = styled.div`
 
 export const PostContent = styled.div`
     padding: 40px 20px;
-    width: 50%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -72,7 +72,7 @@ export const TextButton = styled.a`
 `
 
 export const PostImg = styled.img`
-    width: 50%;
+    width: 40%;
     height: 100%;
 
     @media (max-width: 976px) {

@@ -12,7 +12,7 @@ export const TitleSection = styled.h3`
     font-size: 2.5rem;
     text-align: center;
     font-weight: 700;
-    margin: 50px 0px;
+    margin: 150px 0px;
 `
 
 export const LayoutCardDiv = styled.div`
