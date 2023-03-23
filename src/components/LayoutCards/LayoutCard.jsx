@@ -1,7 +1,8 @@
+import { ArrowRight } from 'phosphor-react';
 import React, { useEffect, useState } from 'react'
 import { getPosts } from '../../services/httpRequest';
 import Card from './Card/Card';
-import { LayoutCardContainer, LayoutCardDiv, TitleSection } from './style';
+import { ButtonCard, LayoutCardContainer, LayoutCardDiv, TitleSection } from './style';
 
 const LayoutCard = () => {
 
@@ -26,7 +27,7 @@ const LayoutCard = () => {
 
   return (
     <LayoutCardContainer>
-        <TitleSection>Explorar</TitleSection>
+        <TitleSection>Novos posts</TitleSection>
         <LayoutCardDiv>
 
                 {
@@ -40,7 +41,10 @@ const LayoutCard = () => {
                         })
                     }
         </LayoutCardDiv>
-        <TitleSection>Ver todos</TitleSection>
+        <ButtonCard>
+            Ver todos 
+            <ArrowRight size={32} weight="bold"/>
+        </ButtonCard>
     </LayoutCardContainer>
   )
 }

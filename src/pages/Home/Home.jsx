@@ -1,12 +1,18 @@
 import React from 'react'
+import Footer from '../../components/Footer/Footer'
 import { Header } from '../../components/Header/Header'
 import LayoutCard from '../../components/LayoutCards/LayoutCard'
 import { BannerSection, HighlightedSection, HomeMain, MainTopicDiv, TextButton, TextDiv, TextImg, TextParagraph, TextTitle } from './style'
 
 export const Home = () => {
+
+  const postRandom = {
+    title: 'Morbi lorem dolor, ultricies ut finibus ut.',
+    body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et eros elit. Donec sit amet lobortis massa. Sed et ullamcorper massa. Nam accumsan, libero non facilisis posuere, mauris sapien bibendum diam, vitae bibendum velit risus vitae nisl. ',
+  }
+
   return (
     <HomeMain>
-      <Header />
 
       <BannerSection>
         <h1>Um blog para quem é apaixonado por viagem.</h1>

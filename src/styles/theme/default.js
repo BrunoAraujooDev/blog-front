@@ -3,6 +3,8 @@ export const DefaultTheme = {
     'primary-color-theme': '#F1F1F1',
     'secondary-color-theme': '#F5F5F5',
     'third-color-theme': '#EBEBE2',
+    'brown-color-theme': '#BD9B80',
+    'fourth-color-theme': '#F5F5EB',
     'transparent-background': '#00000061',
 
     'text-primary-color': '#44494C',
