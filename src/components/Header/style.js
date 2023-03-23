@@ -24,18 +24,32 @@ export const HeaderList = styled.ul`
     align-items: center;
     justify-content: space-between;
     line-height: 1;
-`
+
+    @media (max-width: 550px){
+        justify-content: space-around;
+    }
+
+    
+    `
 
 export const HeaderListItems = styled.li`
 
     padding: 10px 15px;
     
     &:hover{
-           border-bottom: 5px solid ${props => props.theme['button-secondary-color']};
-        }
-
+        border-bottom: 5px solid ${props => props.theme['button-secondary-color']};
+    }
+    
     & > a{
         color: ${props => props.theme['white']};
         
     }
+    &:nth-child(1){
+        @media (max-width: 550px) {
+            display: none;
+        }
+    
+    }
+
+   
 `

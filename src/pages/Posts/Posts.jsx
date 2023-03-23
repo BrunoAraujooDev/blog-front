@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import PostComponent from '../../components/Post/post';
+import { TitleSection } from '../../components/LayoutCards/style';
+import PostComponent from '../../components/Post/PostComponent';
 import { getPosts } from '../../services/httpRequest';
+import { PostsContainer, PostSection } from './styled';
 
 const Posts = () => {
 
@@ -13,8 +15,6 @@ const Posts = () => {
     if (result.status != 400) {
       setPosts(result.response);
     }
-
-    console.log(response);
   }
 
 
@@ -23,22 +23,19 @@ const Posts = () => {
 
   }, [])
   return (
-    <div>
-      <h3>Posts</h3>
+    <PostsContainer>
+      <TitleSection>Posts</TitleSection>
 
-      <section>
+      <PostSection>
         {
-          posts.map((post, index) => {
-
-            if (index <= 3) {
+          posts.map((post, index) => {     
               return (
                 <PostComponent post={post} key={post.id} index={index} />
               )
-            }
           })
         }
-      </section>
-    </div>
+      </PostSection>
+    </PostsContainer>
 
 
   )

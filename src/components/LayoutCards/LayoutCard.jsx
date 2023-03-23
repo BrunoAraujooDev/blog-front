@@ -1,5 +1,6 @@
 import { ArrowRight } from 'phosphor-react';
 import React, { useEffect, useState } from 'react'
+import { Navigate, useNavigate } from 'react-router-dom';
 import { getPosts } from '../../services/httpRequest';
 import Card from './Card/Card';
 import { ButtonCard, LayoutCardContainer, LayoutCardDiv, TitleSection } from './style';
@@ -7,6 +8,7 @@ import { ButtonCard, LayoutCardContainer, LayoutCardDiv, TitleSection } from './
 const LayoutCard = () => {
 
     const [posts, setPosts] = useState([]);
+    const navigate = useNavigate();
 
     const handlePosts = async () => {
 
@@ -17,6 +19,10 @@ const LayoutCard = () => {
         }
 
         console.log(response);
+    }
+
+    const handleNavigate = () => {
+        navigate("/posts");
     }
 
 
@@ -41,7 +47,7 @@ const LayoutCard = () => {
                         })
                     }
         </LayoutCardDiv>
-        <ButtonCard>
+        <ButtonCard onClick={handleNavigate}>
             Ver todos 
             <ArrowRight size={32} weight="bold"/>
         </ButtonCard>

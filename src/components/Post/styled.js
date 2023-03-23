@@ -1,67 +1,56 @@
-export const HighlightedSection = styled.section`
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    background-color: ${props => props.theme['primary-color-theme']};
-    
-    `
+import styled from 'styled-components';
 
-export const MainTopicDiv = styled.div`
+
+
+export const PostContainer = styled.div`
+    display: flex;
     background-color: ${props => props.theme['secondary-color-theme']};
     box-shadow: 0px 5px 40px -1px rgba(0,0,0,0.40);
-    display: flex;
     width: 55rem;
-    height: 25rem;
-    position: relative;
-    top: -50px;
+    height: 20rem;
+    border-radius: 15px;
+    overflow: hidden;
 
     @media (max-width: 1550px) {
         width: 55rem;
   }
 
 
-    @media (max-width: 972px) {
-        width: 95%; 
+    @media (max-width: 976px) {
+        width: 60%; 
+        flex-direction: column;
+        height: 35rem;
   }
 
 
-    @media (max-width: 768px) {
-        flex-direction: column-reverse;
-        height: 500px;
+    @media (max-width: 790px) {
+        width: 90%;
   }
 
-  @media (max-width: 425px) {
-        width: 90%; 
+  @media (max-width: 570px) {
+        height: 50rem; 
   }
 
 `
 
-export const TextDiv = styled.div`
-    padding: 40px 50px;
+export const PostContent = styled.div`
+    padding: 40px 20px;
     width: 50%;
     display: flex;
     flex-direction: column;
     gap: 2rem;
 
-    @media (max-width: 768px) {
+    @media (max-width: 976px) {
       width: 100%;
-      height: 40%;
-  }
-
-  @media (max-width: 425px) {
-    padding: 40px 20px;
+      height: 60%;
   }
 `
 
-export const TextTitle = styled.h3`
-    font-size: 2rem;
+export const PostTitle = styled.h3`
+    font-size: 1.8rem;
     line-height: 1.1;
     color: ${props => props.theme['text-primary-color']};
-
-    @media (max-width: 768px) {
-      font-size: 1.8rem;
-  }
-    `
+`
 
 export const TextParagraph = styled.p`
     color: ${props => props.theme['text-paragraph-color']};
@@ -77,14 +66,17 @@ export const TextButton = styled.a`
     font-size: 1rem;
     font-weight: 700;
     text-align: center;
+    align-self: flex-end;
+    justify-self: flex-end;
+    cursor: pointer;
 `
 
-export const TextImg = styled.img`
+export const PostImg = styled.img`
     width: 50%;
     height: 100%;
 
-    @media (max-width: 768px) {
+    @media (max-width: 976px) {
       width: 100%;
-      height: 60%;
+      height: 40%;
   }
 `

@@ -7,6 +7,8 @@ export const Header = () => {
 
     const [position, setPosition] = useState(0);
 
+    let path = window.location.pathname;
+
     const changeHeaderBackground = () => {
 
         let header = document.getElementById('header');
@@ -14,7 +16,9 @@ export const Header = () => {
         document.addEventListener('scroll', function() {
             setPosition(window.pageYOffset); 
             
-            if ( position <= 680 ) {
+            if(path == "/posts"){
+              header.style.backgroundColor = "#00000061";
+            }else if ( position <= 680 ) {
               header.style.backgroundColor = "transparent";
             } else {
               header.style.backgroundColor = "#00000061";
@@ -29,11 +33,11 @@ export const Header = () => {
 
   return (
     <HeaderContainer id='header'>
-        <LogoImg  src={position >  680 ? darkLogo : whiteLogo} alt='Logo fictício do blog de viagens'/>
+        <LogoImg  src={position <  680 || path == "/posts"  ?  whiteLogo :  darkLogo} alt='Logo fictício do blog de viagens'/>
         <HeaderList>
-            <HeaderListItems><a href="">Início</a></HeaderListItems>
+            <HeaderListItems><a href="/">Início</a></HeaderListItems>
             <HeaderListItems><a href="">Sobre</a></HeaderListItems>
-            <HeaderListItems><a href="">Explorar</a></HeaderListItems>
+            <HeaderListItems><a href="/posts">Postagens</a></HeaderListItems>
         </HeaderList>
     </HeaderContainer>
   )

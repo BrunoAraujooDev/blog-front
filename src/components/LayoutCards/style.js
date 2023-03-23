@@ -7,7 +7,7 @@ export const LayoutCardContainer = styled.section`
     background-color: ${props => props.theme['white']};
 
 `
-export const TitleSection = styled.p`
+export const TitleSection = styled.h3`
     color: ${props => props.theme['brown-color-theme']};
     font-size: 2.5rem;
     text-align: center;
