@@ -46,10 +46,29 @@ export const HighlightedSection = styled.section`
 export const MainTopicDiv = styled.div`
     background-color: ${props => props.theme['primary-color-theme']};
     display: flex;
-    width: 50%;
+    width: 55rem;
     height: 25rem;
     position: relative;
     top: -50px;
+
+    @media (max-width: 1550px) {
+        width: 55rem;
+  }
+
+
+    @media (max-width: 972px) {
+        width: 95%; 
+  }
+
+
+    @media (max-width: 768px) {
+        flex-direction: column-reverse;
+        height: 500px;
+  }
+
+  @media (max-width: 425px) {
+        width: 90%; 
+  }
 
 `
 
@@ -59,18 +78,32 @@ export const TextDiv = styled.div`
     display: flex;
     flex-direction: column;
     gap: 2rem;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      height: 40%;
+      background-color: ${props => props.theme['secondary-color-theme']};
+  }
+
+  @media (max-width: 425px) {
+    padding: 40px 20px;
+  }
 `
 
 export const TextTitle = styled.h3`
     font-size: 2rem;
     line-height: 1.1;
     color: ${props => props.theme['text-primary-color']};
+
+    @media (max-width: 768px) {
+      font-size: 1.8rem;
+  }
     `
 
 export const TextParagraph = styled.p`
     color: ${props => props.theme['text-paragraph-color']};
     font-size: 1rem;
-    `
+ `
 
 export const TextButton = styled.a`
     background-color: ${props => props.theme['button-primary-color']};
@@ -86,5 +119,10 @@ export const TextButton = styled.a`
 export const TextImg = styled.img`
     width: 50%;
     height: 100%;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      height: 60%;
+  }
 `
 
