@@ -6,12 +6,12 @@ export const PostsContainer = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 40px 50px;
+    padding: 200px 40px 50px 40px;
     gap: 5rem;
     background-color: ${props => props.theme['primary-color-theme']};
 
     @media (max-width: 570px) {
-        padding: 40px 10px;
+        padding: 200px 10px 40px 10px;
   }
 `
 

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import CarouselComponent from '../../components/Carousel/CarouselComponent';
 import { TitleSection } from '../../components/LayoutCards/style';
 import PostComponent from '../../components/Post/PostComponent';
 import { getPosts } from '../../services/httpRequest';
@@ -24,8 +25,10 @@ const Posts = () => {
   }, [])
   return (
     <PostsContainer>
-      <TitleSection>Posts</TitleSection>
-
+      <CarouselComponent/>
+      <div>
+        <TitleSection>Guias e posts</TitleSection>
+      </div>
       <PostSection>
         {
           posts.map((post, index) => {     

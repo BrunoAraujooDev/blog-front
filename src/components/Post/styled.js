@@ -69,6 +69,10 @@ export const TextButton = styled.a`
     align-self: flex-end;
     justify-self: flex-end;
     cursor: pointer;
+    
+    &:hover{
+      color: ${props => props.theme['text-primary-color']};
+    }
 `
 
 export const PostImg = styled.img`

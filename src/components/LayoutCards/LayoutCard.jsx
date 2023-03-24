@@ -18,7 +18,6 @@ const LayoutCard = () => {
             setPosts(result.response);
         }
 
-        console.log(response);
     }
 
     const handleNavigate = () => {
