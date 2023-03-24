@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const CarouselImg = styled.img`
     width: 80rem;
     height: 30rem;
+    object-fit: cover;
 
     @media (max-width: 1360px) {
         width: 100%;

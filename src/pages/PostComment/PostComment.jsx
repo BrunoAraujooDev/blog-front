@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
+import PostDetails from '../../components/PostDetails/PostDetails';
 import { getCommentsById, getPostById, getUsersById } from '../../services/httpRequest';
+import { PostCommentContainer } from './style';
 
 const PostCommentPage = () => {
 
@@ -30,8 +32,9 @@ const PostCommentPage = () => {
   }, [])
 
   return (
-    <div>
-    </div>
+    <PostCommentContainer>
+      <PostDetails  post={post} user={user}/>
+    </PostCommentContainer>
   )
 }
 

@@ -18,7 +18,7 @@ export const Header = () => {
       let header = document.getElementById('header');
       
       document.addEventListener('scroll', changeHeaderBackground);
-            if(path == "/posts"){
+            if(path.includes("/post") ){
               header.style.backgroundColor = "#9c6644";
             }else if ( position <= 680 ) {
               header.style.backgroundColor = "transparent";

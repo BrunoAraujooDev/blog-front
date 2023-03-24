@@ -1,6 +1,6 @@
 import { ArrowRight } from 'phosphor-react';
 import React, { useEffect, useState } from 'react'
-import { Navigate, useNavigate } from 'react-router-dom';
+import {  useNavigate } from 'react-router-dom';
 import { getPosts } from '../../services/httpRequest';
 import Card from './Card/Card';
 import { ButtonCard, LayoutCardContainer, LayoutCardDiv, TitleSection } from './style';
