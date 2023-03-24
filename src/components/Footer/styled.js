@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const FooterContainer = styled.footer`
     height: 7rem;
     width: 100%;
-    background-color: ${props => props.theme['fourth-color-theme']};
+    background-color: ${props => props.theme['header-primary-color']};
     padding: 30px;
 
     display: flex;
@@ -22,6 +22,10 @@ export const FooterList = styled.ul`
     `
 
 export const FooterItemLink = styled.a`
-    color: ${props => props.theme['text-primary-color']};
+    color: ${props => props.theme['white']};
+
+    &:hover{
+        color: ${props => props.theme['white']};
+    }
 
 `

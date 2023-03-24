@@ -114,6 +114,11 @@ export const TextButton = styled.a`
     font-size: 1rem;
     font-weight: 700;
     text-align: center;
+    cursor: pointer;
+
+    &:hover{
+        color: inherit;
+    }
 `
 
 export const TextImg = styled.img`

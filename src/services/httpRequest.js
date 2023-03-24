@@ -12,6 +12,17 @@ export const getPosts = async () => {
     }
 }
 
+export const getPostById = async (id) => {
+
+    try {
+        const response = await api.get(`/posts/${id}`);
+
+        return  {'response': response.data, 'status': response.status};
+    } catch (error) {
+        return error;
+    }
+}
+
 export const getCommentsById = async (id) => {
     
     try {

@@ -71,7 +71,7 @@ export const TextButton = styled.a`
     cursor: pointer;
     
     &:hover{
-      color: ${props => props.theme['text-primary-color']};
+      color: inherit;
     }
 `
 

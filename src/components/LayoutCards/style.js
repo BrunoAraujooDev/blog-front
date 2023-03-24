@@ -17,7 +17,6 @@ export const TitleSection = styled.h3`
     font-size: 2.5rem;
     text-align: left;
     font-weight: 700;
-    /* background-color: ${props => props.theme['white']}; */
     
     &::before{
         content: "";
