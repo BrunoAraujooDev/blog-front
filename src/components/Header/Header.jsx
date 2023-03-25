@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 export const Header = () => {
 
     const [position, setPosition] = useState(window.pageYOffset);
+    
     const navigate = useNavigate();
 
     let path = window.location.pathname;
