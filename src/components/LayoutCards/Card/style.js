@@ -3,10 +3,15 @@ import styled from "styled-components";
 export const CardContainer = styled.div`
     height: 500px;
     width: 300px;
+    max-width: 300px;
     border-radius: 15px;
     border: 1px solid ${props => props.theme['border-primary-color']};
     box-shadow: 0px 5px 40px -1px rgba(0,0,0,0.40);
     overflow: hidden;
+`
+export const CardImg = styled.img`
+    width: 100%;
+    height: 40%;
 `
 
 export const CardContent = styled.div`
@@ -27,10 +32,6 @@ export const CardContent = styled.div`
     }
 `
 
-export const CardImg = styled.img`
-    width: 100%;
-    height: 40%;
-`
 
 
 export const CardTitle = styled.span`

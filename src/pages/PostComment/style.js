@@ -9,4 +9,8 @@ export const PostCommentContainer = styled.div`
     flex-direction: column;
     padding: 250px 50px;
     background-color: ${props => props.theme['primary-color-theme']};
+
+    @media (max-width: 360px) {
+        padding: 250px 20px;
+    }
 `

@@ -37,7 +37,6 @@ export const Header = () => {
         <LogoImg  src={whiteLogo } alt='Logo fictício do blog de viagens' onClick={() => navigate('/')}/>
         <HeaderList>
             <HeaderListItems><a href="/">Início</a></HeaderListItems>
-            <HeaderListItems><a href="">Sobre</a></HeaderListItems>
             <HeaderListItems><a href="/posts">Postagens</a></HeaderListItems>
         </HeaderList>
     </HeaderContainer>

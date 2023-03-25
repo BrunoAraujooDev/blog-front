@@ -18,7 +18,7 @@ export const TitleSection = styled.h3`
     text-align: left;
     font-weight: 700;
     
-    &::before{
+    &::after{
         content: "";
         border-top: 3px solid ${props => props.theme['text-primary-color']};
         position: relative;
@@ -27,7 +27,6 @@ export const TitleSection = styled.h3`
         right: 0;
         display: block;
         left: 0;
-        bottom: -50px;
 
         @media (max-width: 1360px) {
         width: 60rem;
@@ -52,17 +51,26 @@ export const TitleSection = styled.h3`
     
 `
 
-export const SpanLine = styled.span`
-
-`
-
 export const LayoutCardDiv = styled.div`
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
     justify-content: center;
     align-items: center;
     padding: 30px 50px;
-    width: 100%;
+    width: 100vw;
     gap: 4rem;
+
+    @media (max-width: 1440px) {
+        grid-template-columns:  repeat(3, auto);
+    }
+
+    @media (max-width: 1080px) {
+        grid-template-columns:  repeat(2, auto);
+    }
+
+    @media (max-width: 720px) {
+        grid-template-columns:  repeat(1, auto);
+    }
     
 `
 

@@ -9,9 +9,14 @@ export const CommentsContainer = styled.section`
     padding: 30px 50px;
     gap: 2rem;
     border: 1px solid ${props => props.theme['text-primary-color']};
-
-    @media (max-width: 600px){
+    
+    &> ul {
+        padding-left: 0px;
+    }
+    @media (max-width: 670px){
         padding: 20px;
+        width: 100%;
+
     }
 `
 

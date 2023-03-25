@@ -23,14 +23,8 @@ export const HeaderList = styled.ul`
     width: 20rem;
     height: 4rem;
     align-items: center;
-    justify-content: space-between;
-    line-height: 1;
-
-    @media (max-width: 550px){
-        justify-content: space-around;
-    }
-
-    
+    justify-content: space-around;
+    line-height: 1;   
     `
 
 export const HeaderListItems = styled.li`
@@ -45,12 +39,5 @@ export const HeaderListItems = styled.li`
         color: ${props => props.theme['white']};
         
     }
-    &:nth-child(1){
-        @media (max-width: 550px) {
-            display: none;
-        }
-    
-    }
-
    
 `
