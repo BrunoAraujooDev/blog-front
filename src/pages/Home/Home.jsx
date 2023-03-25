@@ -18,7 +18,7 @@ export const Home = () => {
       <HighlightedSection>
         <MainTopicDiv>
           <TextDiv>
-            <TextTitle>Morbi lorem dolor, ultricies ut finibus ut.</TextTitle>
+            <TextTitle>Somos apaixonados por viagens</TextTitle>
             <TextParagraph>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
               Vivamus et eros elit. Donec sit amet lobortis massa. 
