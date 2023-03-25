@@ -10,7 +10,7 @@ export const PostCommentContainer = styled.div`
     padding: 250px 50px;
     background-color: ${props => props.theme['primary-color-theme']};
 
-    @media (max-width: 360px) {
-        padding: 250px 20px;
+    @media (max-width: 560px) {
+        padding: 250px 30px;
     }
 `

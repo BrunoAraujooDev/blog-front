@@ -13,6 +13,7 @@ export const CommentsContainer = styled.section`
     &> ul {
         padding-left: 0px;
     }
+    
     @media (max-width: 670px){
         padding: 20px;
         width: 100%;

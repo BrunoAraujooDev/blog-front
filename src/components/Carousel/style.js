@@ -4,6 +4,7 @@ export const CarouselImg = styled.img`
     width: 80rem;
     height: 30rem;
     object-fit: cover;
+    border: 1px solid #000;
     
     @media (max-width: 1360px) {
         width: 100%;
