@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import whiteLogo from '../../assets/blog-logo-white.svg';
-import darkLogo from '../../assets/blog-logo-dark.svg';
 import { HeaderContainer, HeaderList, HeaderListItems, LogoImg } from './style';
 import { useNavigate } from 'react-router-dom';
 
