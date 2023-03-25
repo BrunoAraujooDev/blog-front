@@ -1,6 +1,4 @@
 import React from 'react'
-import Footer from '../../components/Footer/Footer'
-import { Header } from '../../components/Header/Header'
 import LayoutCard from '../../components/LayoutCards/LayoutCard'
 import { BannerSection, HighlightedSection, HomeMain, MainTopicDiv, TextButton, TextDiv, TextImg, TextParagraph, TextTitle } from './style'
 
