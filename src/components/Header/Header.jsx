@@ -20,7 +20,7 @@ export const Header = () => {
       document.addEventListener('scroll', changeHeaderBackground);
             if(path.includes("/post") ){
               header.style.backgroundColor = "#9c6644";
-            }else if ( position <= 680 ) {
+            }else if ( position <= 570 ) {
               header.style.backgroundColor = "transparent";
             } else {
               header.style.backgroundColor = "#9c6644";

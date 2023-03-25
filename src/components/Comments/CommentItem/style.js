@@ -5,16 +5,17 @@ export const CommentItemContainer = styled.li`
     display: flex;
     gap: 2rem;
     margin: 2rem 0;
-`
+    `
 
 export const CommentItemImg = styled.img`
     width: 50px;
     max-width: 50px;
     height: 50px;
     border-radius: 50px;
-` 
+    ` 
 
 export const CommentDiv = styled.div`
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 1rem;

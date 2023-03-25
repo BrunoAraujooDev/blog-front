@@ -13,6 +13,7 @@ export const DefaultTheme = {
     'text-paragraph-color': '#6E6F71',
     'text-secondary-color': '#C29979',
     'text-button-color': '#8A8655',
+    'text-error-color': '#ba181b',
 
     'border-primary-color': '#E7E7E7',
 

@@ -84,3 +84,9 @@ export const FormButton = styled.button`
     
     }
 `
+
+export const FormError = styled.span`
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    color: ${props => props.theme['text-error-color']};
+`

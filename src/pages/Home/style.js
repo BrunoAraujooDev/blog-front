@@ -40,6 +40,7 @@ export const HighlightedSection = styled.section`
     justify-content: center;
     width: 100%;
     background-color: ${props => props.theme['primary-color-theme']};
+    padding: 0px 20px;
     
     `
 
@@ -51,24 +52,25 @@ export const MainTopicDiv = styled.div`
     height: 25rem;
     position: relative;
     top: -50px;
-
+    
     @media (max-width: 1550px) {
         width: 55rem;
-  }
-
-
+    }
+    
+    
     @media (max-width: 972px) {
         width: 95%; 
-  }
-
-
+    }
+    
+    
     @media (max-width: 768px) {
         flex-direction: column-reverse;
-        height: 500px;
+        height: auto;
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: 420px) {
         width: 90%; 
+        height: 55rem;
   }
 
 `
@@ -82,7 +84,7 @@ export const TextDiv = styled.div`
 
     @media (max-width: 768px) {
       width: 100%;
-      height: 40%;
+      height: 60%;
   }
 
   @media (max-width: 425px) {
@@ -127,7 +129,7 @@ export const TextImg = styled.img`
 
     @media (max-width: 768px) {
       width: 100%;
-      height: 60%;
+      height: 40%;
   }
 `
 

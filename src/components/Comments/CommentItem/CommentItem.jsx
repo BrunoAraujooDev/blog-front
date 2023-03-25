@@ -2,6 +2,7 @@ import React from 'react'
 import { CommentDiv, CommentItemContainer, CommentItemImg, SpanItem, UsernameCite } from './style'
 
 const CommentItem = ({comment}) => {
+    
     return (
         <CommentItemContainer>
             <CommentItemImg src={`https://i.pravatar.cc/50?img=${comment.id}`} alt='random avatar pic' />
