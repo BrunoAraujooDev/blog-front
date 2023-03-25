@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
 import DefaultLayout from './layout/DefaultLayout/defaultLayout'
-import { Home } from './pages/Home/home'
+import { Home } from './pages/Home/Home'
 import PostCommentPage from './pages/PostComment/PostComment'
 import Posts from './pages/Posts/Posts'
 
