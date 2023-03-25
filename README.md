@@ -10,12 +10,12 @@ Frontend desenvolvido em React, utilizando: Axios, Phosphoricons, Vite, React-ro
 
 As seguintes API foram utilizadas:
 
-*Para imagens:
-    - Pravatar - https://pravatar.cc/
-    - Unsplash - https://source.unsplash.com/random
+Para imagens:
+- Pravatar - https://pravatar.cc/
+- Unsplash - https://source.unsplash.com/random
 
-*Para dados:
-    - JSON Placeholder - https://jsonplaceholder.typicode.com/
+Para dados:
+- JSON Placeholder - https://jsonplaceholder.typicode.com/
 
 
 ## Configuração do Ambiente
