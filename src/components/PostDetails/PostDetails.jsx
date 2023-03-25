@@ -9,7 +9,7 @@ const PostDetails = ({ post, user, day, month }) => {
 
   return (
     <PostArticle>
-      <CarouselImg src='https://source.unsplash.com/random/?trip' alt='Imagem aleatória' />
+      <CarouselImg src='https://source.unsplash.com/random/?mountains,beach,snow,jungle' alt='Imagem aleatória' />
       <section>
         <PostTitle>{post.title != undefined ?
           post.title[0].toUpperCase() + post.title.substring(1, post.title.length) :

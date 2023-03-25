@@ -33,7 +33,7 @@ const Posts = () => {
         {
           posts.map((post, index) => {     
               return (
-                <PostComponent post={post} key={post.id} index={index} />
+                <PostComponent post={post} key={post.id} index={index}/>
               )
           })
         }
