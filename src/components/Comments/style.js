@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const CommentsContainer = styled.section`
     display: flex;
-    width: 70%;
+    width: 75%;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
@@ -26,7 +26,7 @@ export const CommentsTitle = styled.span`
     gap: 0.8rem;
     font-weight: 700;
     font-size: 1.5rem;
-    width: 90%;
+    width: 100%;
     color: ${props => props.theme['text-primary-color']};
     border-bottom: 1px solid ${props => props.theme['text-paragraph-color']};
     `

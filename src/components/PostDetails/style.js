@@ -41,4 +41,29 @@ export const PostSpan = styled.span`
 export const PostContent = styled.p`
     width: 75%;
     margin: 10rem 0;
+
+    @media (max-width: 670px){
+        width: 100%;
+
+    }
+`
+
+export const WrittenByContainer = styled.section `
+    border: 1px solid ${props => props.theme['text-paragraph-color']};
+    padding: 30px;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 75%;
+
+    @media (max-width: 670px){
+        width: 100%;
+
+    }
+`
+
+export const AuthorName = styled.span`
+    color: ${props => props.theme['text-primary-color']};
+    font-weight: 700;
 `
