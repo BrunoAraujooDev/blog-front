@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
+import CommentList from '../../components/Comments/CommentList';
 import PostDetails from '../../components/PostDetails/PostDetails';
 import { getCommentsById, getPostById, getUsersById } from '../../services/httpRequest';
 import { PostCommentContainer } from './style';
@@ -20,11 +21,7 @@ const PostCommentPage = () => {
     setUser(userData.response);
     
     const commentsData = await getCommentsById(postId);
-    setComments(commentsData);
-    
-    console.log('post', post)
-    console.log('user', user)
-    console.log('comments', comments)
+    setComments(commentsData.response);
   }
 
   useEffect(() => {
@@ -34,6 +31,7 @@ const PostCommentPage = () => {
   return (
     <PostCommentContainer>
       <PostDetails  post={post} user={user}/>
+      <CommentList comments={comments}/>
     </PostCommentContainer>
   )
 }

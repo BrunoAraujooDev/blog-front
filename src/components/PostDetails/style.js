@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { TitleSection } from '../LayoutCards/style'
 
 export const PostArticle = styled.article`
     display: flex;
@@ -7,10 +8,11 @@ export const PostArticle = styled.article`
     align-items: center;
 `
 
-export const PostTitle = styled.h3`
+export const PostTitle = styled(TitleSection)`
     font-weight: 700;
     margin-bottom: 1.5rem;
     width: 100%;
+    margin-top: 5rem;
 `
 
 
@@ -37,6 +39,6 @@ export const PostSpan = styled.span`
 `
 
 export const PostContent = styled.p`
-    width: 100%;
-    margin-top: 10rem;
+    width: 75%;
+    margin: 10rem 0;
 `

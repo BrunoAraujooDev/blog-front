@@ -6,6 +6,7 @@ export const PostCommentContainer = styled.div`
     min-height:90vh;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     padding: 250px 50px;
     background-color: ${props => props.theme['primary-color-theme']};
 `

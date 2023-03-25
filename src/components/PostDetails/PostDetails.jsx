@@ -1,12 +1,19 @@
+import { Calendar, PencilLine } from 'phosphor-react';
 import React from 'react'
+import {  getDayFormatted, getMonthFormatted } from '../../utils/getRandomNumber';
 import {CarouselImg} from '../Carousel/style';
 import { PostArticle, PostAuthorContainer, PostAvatarContainer, PostContent, PostSpan, PostTitle } from './style'
 
 const PostDetails = ({ post, user }) => {
 
+  const day = getDayFormatted();
+  const month = getMonthFormatted();
+
+
 
   return (
     <PostArticle>
+      <CarouselImg src='https://source.unsplash.com/random/?trip' alt='Imagem aleatória'/>
       <section>
       <PostTitle>{post.title != undefined  ? 
         post.title[0].toUpperCase() + post.title.substring(1, post.title.length) :
@@ -16,16 +23,15 @@ const PostDetails = ({ post, user }) => {
         <img src='https://i.pravatar.cc/60' alt='random avatar pic' />
         <PostAuthorContainer>
           <PostSpan>
-            <strong>Autor:</strong>   {user.name}
+          <PencilLine size={25} />   {user.name}
           </PostSpan>
           <PostSpan>
-            <strong>Atualizado em:</strong>  30/03/2023
+            <Calendar size={25} />{ `${day}/${month}/2022`}
           </PostSpan>
         </PostAuthorContainer>
       </PostAvatarContainer>
       </section>
 
-      <CarouselImg src='https://source.unsplash.com/random/?trip' alt='Imagem aleatória'/>
 
       <PostContent>
         {post.body?.charAt(0).toUpperCase()}
