@@ -2,22 +2,18 @@ import styled from 'styled-components';
 
 
 export const FooterContainer = styled.footer`
-    height: 7rem;
     width: 100%;
     background-color: ${props => props.theme['header-primary-color']};
     padding: 30px;
-
     display: flex;
     justify-content: center;
-    gap: 10rem;
-    align-items: center;
-
- `
+    align-items: center; 
+    `
 
 export const FooterList = styled.ul`
     display: flex;
-    justify-content: center;
-    gap: 10rem;
+    justify-content: space-around;
+    width: 100%;
     align-items: center;
     `
 

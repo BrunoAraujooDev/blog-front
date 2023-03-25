@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import CommentList from '../../components/Comments/CommentList';
 import PostDetails from '../../components/PostDetails/PostDetails';
 import { getCommentsById, getPostById, getUsersById } from '../../services/httpRequest';
+import { getDayFormatted, getMonthFormatted } from '../../utils/getRandomNumber';
 import { PostCommentContainer } from './style';
 
 const PostCommentPage = () => {
@@ -11,6 +12,9 @@ const PostCommentPage = () => {
   const [post, setPost] = useState([]);
   const [user, setUser] = useState([]);
   const [comments, setComments] = useState([]);
+
+  const day = getDayFormatted(1);
+  const month = getMonthFormatted(1);
   
   const handleRequest = async () => {
     
@@ -30,8 +34,8 @@ const PostCommentPage = () => {
 
   return (
     <PostCommentContainer>
-      <PostDetails  post={post} user={user}/>
-      <CommentList comments={comments}/>
+      <PostDetails  post={post} user={user}  day={day} month={month}/>
+      <CommentList comments={comments} day={day} month={month}/>
     </PostCommentContainer>
   )
 }

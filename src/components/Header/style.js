@@ -30,6 +30,7 @@ export const HeaderList = styled.ul`
 export const HeaderListItems = styled.li`
 
     padding: 10px 15px;
+    border-bottom: 5px solid transparent;
     
     &:hover{
         border-bottom: 5px solid ${props => props.theme['button-secondary-color']};

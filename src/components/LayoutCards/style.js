@@ -91,4 +91,8 @@ export const ButtonCard = styled.button`
     border: none;
     margin: 4rem auto;
     cursor: pointer;
+
+    &:hover{
+        background-color: ${props => props.theme['header-primary-color']};
+    }
 `

@@ -3,9 +3,9 @@
 const generateRandomNumber = (min, max) => Math.floor(Math.random() * (max - min)) + min;
 
 
-export const getDayFormatted = () => {
+export const getDayFormatted = (min) => {
 
-    let day = generateRandomNumber(1,29);
+    let day = generateRandomNumber(min,29);
 
     if(day < 10){
         return '0' + day;
@@ -14,7 +14,7 @@ export const getDayFormatted = () => {
     return day;
 }
 
-export const getMonthFormatted = () => {
+export const getMonthFormatted = (min) => {
     let month = generateRandomNumber(1,12);
 
     if(month < 10){

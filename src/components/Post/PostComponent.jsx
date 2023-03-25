@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import {TextParagraph, TextButton, PostContainer, PostTitle, PostImg, PostContent } from './styled'
+import {TextParagraph, PostContainer, PostTitle, PostImg, PostContent, TextButtonPost } from './styled'
 
 const PostComponent = ({post, index}) => {
 
@@ -15,7 +15,7 @@ const PostComponent = ({post, index}) => {
             <TextParagraph>
               {post.body}
             </TextParagraph>
-            <TextButton onClick={() => navigate(`/post/${post.id}`)}>Ver mais</TextButton>
+            <TextButtonPost onClick={() => navigate(`/post/${post.id}`)}>Ver mais</TextButtonPost>
           </PostContent>
         </PostContainer>
       

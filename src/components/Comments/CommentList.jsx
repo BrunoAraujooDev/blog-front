@@ -5,7 +5,7 @@ import CommentItem from './CommentItem/CommentItem'
 import { SpanItem } from './CommentItem/style'
 import { CommentsContainer, CommentsTitle, FormButton, FormComment, FormDiv, FormError, FormTitle } from './style'
 
-const CommentList = ({ comments }) => {
+const CommentList = ({ comments, day, month }) => {
 
     const [dataComments, setDataComments] = useState([]);
     const [hasName, setHasName] = useState(false);
@@ -87,7 +87,7 @@ const CommentList = ({ comments }) => {
                 {
                     dataComments.map(comment => {
                         return (
-                            <CommentItem comment={comment} key={comment.id} />
+                            <CommentItem comment={comment} key={comment.id} day={day} month={month}/>
                         )
                     })
                 }

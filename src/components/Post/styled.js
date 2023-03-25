@@ -57,7 +57,7 @@ export const TextParagraph = styled.p`
     font-size: 1rem;
  `
 
-export const TextButton = styled.a`
+export const TextButtonPost = styled.a`
     background-color: ${props => props.theme['button-primary-color']};
     color: ${props => props.theme['text-primary-color']};
     padding: 10px 20px;

@@ -1,19 +1,11 @@
 import { Calendar, PencilLine } from 'phosphor-react';
 import React from 'react'
-import { getDayFormatted, getMonthFormatted } from '../../utils/getRandomNumber';
 import { CarouselImg } from '../Carousel/style';
 import { CommentItemImg } from '../Comments/CommentItem/style';
 import { CommentsTitle } from '../Comments/style';
 import { AuthorName, PostArticle, PostAuthorContainer, PostAvatarContainer, PostContent, PostSpan, PostTitle, WrittenByContainer } from './style'
 
-const PostDetails = ({ post, user }) => {
-  console.log('user', user)
-
-
-  const day = getDayFormatted();
-  const month = getMonthFormatted();
-
-
+const PostDetails = ({ post, user, day, month }) => {
 
   return (
     <PostArticle>
@@ -37,30 +29,30 @@ const PostDetails = ({ post, user }) => {
       </section>
       <PostContent>
         {post.body?.charAt(0).toUpperCase()}
-        {post.body}
-        {post.body}
-        {post.body}
-        {post.body}
-        {post.body}
-        {post.body}
-        {post.body}
-        {post.body}
-        {post.body}
-        {post.body}
-        {post.body}
-        {post.body}
-        {post.body}
-        {post.body}
-        {post.body}.
+        {post?.body}
+        {post?.body}
+        {post?.body}
+        {post?.body}
+        {post?.body}
+        {post?.body}
+        {post?.body}
+        {post?.body}
+        {post?.body}
+        {post?.body}
+        {post?.body}
+        {post?.body}
+        {post?.body}
+        {post?.body}
+        {post?.body}.
       </PostContent>
       <WrittenByContainer>
         <CommentsTitle>Escrito por</CommentsTitle>
         <PostAvatarContainer>
           <CommentItemImg src='https://i.pravatar.cc/60' alt='random avatar pic' />
           <PostAuthorContainer>
-            <AuthorName>{user.name}</AuthorName>
+            <AuthorName>{user?.name}</AuthorName>
             <PostSpan>
-              {`Redator e criador de conteúdo pela ${user.company.name}, mais conhecido como ${user.username}, moro em ${user.address.city} e 
+              {`Redator e criador de conteúdo pela ${user?.company?.name}, mais conhecido como ${user?.username}, moro em ${user?.address?.city} e 
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque diam, aliquet a mauris sit amet, efficitur placerat arcu. 
               `}
             </PostSpan>
