@@ -57,7 +57,7 @@ export const LayoutCardDiv = styled.div`
     justify-content: center;
     align-items: center;
     padding: 30px 50px;
-    width: 100vw;
+    width: 100%;
     gap: 4rem;
 
     @media (max-width: 1440px) {
